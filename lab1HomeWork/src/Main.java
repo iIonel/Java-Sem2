@@ -31,7 +31,7 @@ public class Main {
             //TASK 3
             String s = " ";
             for (int i = 1; i <= n; ++i) {
-                s = " ";
+                s =" ";
                 for (int j = 1; j <= n; ++j) {
                     s += latinMatrix[i][j];
                 }
@@ -53,7 +53,7 @@ public class Main {
                 TimeUnit.SECONDS.sleep(5);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
-            }   
+            }
             long end = System.nanoTime();
             long time = end - start;
             System.out.println("nanoseconds: " + time);
