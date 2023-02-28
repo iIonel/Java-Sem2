@@ -6,7 +6,7 @@ public class Main {
         int n;
         Scanner stdin = new Scanner(System.in);
         n = stdin.nextInt();
-        if(n < 30000) {
+        if(n < 1000) {
             System.out.println(n + " este numar intreg");
             //TASK 2
             int[][] latinMatrix = new int[n + 1][n + 1];
