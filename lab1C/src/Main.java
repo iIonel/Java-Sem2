@@ -39,6 +39,5 @@ public class Main {
         }
         System.out.println(n);
         System.out.println("Willy-nilly, this semester I will learn " + languages[n]);
-
     }
 }
