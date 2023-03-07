@@ -1,5 +1,4 @@
 public class Main {
-
     public static void DFS(Location a, Route[] routes){
         a.setVisited(true);
         for(int i = 0; i < routes.length; ++i){
@@ -56,6 +55,7 @@ public class Main {
             if(finish.isVisited() == true)
                 System.out.print("Possible Road");
             else System.out.print("Impossible Road");
+
         }
         else System.out.println("Nevalid Problem");
     }

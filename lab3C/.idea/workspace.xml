@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373aa0e9-ee4c-4b38-ab37-d20f5a174278" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1HomeWork/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1HomeWork/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1HomeWork/out/production/lab1HomeWork/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2HomeWork/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2HomeWork/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -12,6 +18,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -25,6 +39,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/maste/Documents/JavaLabs/lab2HomeWork",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
