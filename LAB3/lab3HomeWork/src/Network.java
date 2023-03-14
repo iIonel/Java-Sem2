@@ -17,6 +17,14 @@ public class Network {
         nodes.add(Smecheria);
         nodes.add(Fabrica);
 
+        Dani.addFriend(Florin);
+        Dani.addFriend(Tzanca);
+        Dani.setEmployer(UrziSoft);
+        Florin.setEmployer(Smecheria);
+        Tzanca.setEmployer(Fabrica);
+        UrziSoft.addEmployee(Dani,"Smecher");
+        Smecheria.addEmployee(Florin,"BOSS");
+        Fabrica.addEmployee(Tzanca,"viata mea");
         System.out.println(nodes);
 
     }
