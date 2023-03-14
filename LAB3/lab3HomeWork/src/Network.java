@@ -17,14 +17,21 @@ public class Network {
         nodes.add(Smecheria);
         nodes.add(Fabrica);
 
-        Dani.addFriend(Florin);
-        Dani.addFriend(Tzanca);
-        Dani.setEmployer(UrziSoft);
-        Florin.setEmployer(Smecheria);
-        Tzanca.setEmployer(Fabrica);
-        UrziSoft.addEmployee(Dani,"Smecher");
-        Smecheria.addEmployee(Florin,"BOSS");
-        Fabrica.addEmployee(Tzanca,"viata mea");
+        for(int i = 0; i < nodes.size(); ++i){
+            int count = 0;
+            if(nodes.get(i) instanceof Person){
+                List<Person> friends = ((Person) nodes.get(i)).getFriends();
+                if(friends != null)
+                    count += ((Person) nodes.get(i)).getFriends().size();
+                Company employer = ((Person) nodes.get(i)).getEmployer();
+                if(employer != null) count++;
+            }
+            else {
+                Map<String, String> employees = ((Company) nodes.get(i)).getEmployees();
+                if (employees != null)
+                    count += ((Company) nodes.get(i)).getEmployees().size();
+            }
+        }
         System.out.println(nodes);
 
     }

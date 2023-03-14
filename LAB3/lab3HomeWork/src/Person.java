@@ -1,28 +1,17 @@
 import java.util.*;
 public class Person implements Node,Comparable<Person>{
     private String name;
-    private List<Person> friend;
     private Company employer;
-
-    public List<Person> getFriend() {
-        return friend;
-    }
-
-    public Company getEmployer() {
-        return employer;
-    }
-
-    public void setFriend(List<Person> friend) {
-        this.friend = friend;
-    }
-
+    private List<Person> friends;
     public Person(String name) {
         this.name = name;
-        this.friend = new ArrayList<Person>();
-        this.employer = null;
+        employer = null;
     }
 
-    @Override
+    public List<Person> getFriends() {
+        return friends;
+    }
+
     public String getName() {
         return name;
     }
@@ -33,14 +22,16 @@ public class Person implements Node,Comparable<Person>{
     public void setName(String name) {
         this.name = name;
     }
+    public void addFriend(Person friend) {
+        this.friends.add(friend);
+        friend.friends.add(this);
+    }
 
     public void setEmployer(Company company) {
         this.employer = company;
     }
 
-    public void addFriend(Person f){
-        this.friend.add(f);
-        f.friend.add(this);
+    public Company getEmployer() {
+        return employer;
     }
-
 }
