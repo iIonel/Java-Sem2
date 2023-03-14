@@ -14,15 +14,17 @@ public class Main {
         for(Student s: students)
             System.out.println(s.getName());
 
-        var projects = IntStream.range(0,3)
-                .mapToObj(i->new Project("P" + i))
-                .toArray(Project[]::new);
-        Set<Project> treeProjects = new TreeSet<>();
-        for(Project p: projects){
-            treeProjects.add(p);
+        var projects = IntStream.rangeClosed(0, 3)
+                .mapToObj(i -> new Project("P" + i))
+                .toArray((Project[]::new));
+
+        Set<Project> treeOfProjects = new TreeSet<>();
+        treeOfProjects.addAll(Arrays.asList(projects));
+
+        for(Project project : projects)
+        {
+            System.out.println(project.getName());
         }
-        for(Project p: projects)
-            System.out.println(p.getName());
 
     }
 }
