@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.*;
 public class Company implements Node,Comparable<Company>{
     private String name;
@@ -23,7 +25,7 @@ public class Company implements Node,Comparable<Company>{
     }
 
 
-    public void addEmployee(Person person, String job){
+    public void addEmployee(@NotNull Person person, String job){
         String put = this.employees.put(person.getName(), job);
         person.setEmployer(this);
     }
