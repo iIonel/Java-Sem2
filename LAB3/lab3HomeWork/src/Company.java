@@ -7,10 +7,6 @@ public class Company implements Node,Comparable<Company>{
         return employees;
     }
 
-    public void setEmployees(Map<String, String> employees) {
-        this.employees = employees;
-    }
-
     public Company(String name) {
         this.name = name;
     }
@@ -26,8 +22,9 @@ public class Company implements Node,Comparable<Company>{
         return this.name.compareTo(other.name);
     }
 
+
     public void addEmployee(Person person, String job){
-        this.employees.put(person.getName(),job);
+        String put = this.employees.put(person.getName(), job);
         person.setEmployer(this);
     }
 
