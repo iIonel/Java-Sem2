@@ -1,6 +1,8 @@
 package org.example;
 
-public class Project {
+import java.util.Comparator;
+
+public class Project implements Comparable<Project> {
     private String name;
 
     public String getName() {
@@ -13,5 +15,10 @@ public class Project {
 
     public Project(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int compareTo(Project o) {
+        return 0;
     }
 }
