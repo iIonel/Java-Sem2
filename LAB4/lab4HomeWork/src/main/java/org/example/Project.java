@@ -35,7 +35,7 @@ public class Project implements Comparable<Project>{
         this.name = name;
     }
 
-    public Project(String name) {
+    public Project(String name) {as
         this.name = name;
         this.noStudents = 0;
         this.isReached = false;
