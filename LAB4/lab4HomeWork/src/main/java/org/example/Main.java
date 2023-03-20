@@ -61,7 +61,9 @@ public class Main {
         Map<Student,List<Project>> map = problem.getPrefMap();
 
         problem.displayStudentsWithPreferences();
+        System.out.println();
         problem.displayStudentsWithLowPreferences();
+        System.out.println();
         problem.greedySolution();
     }
 }
