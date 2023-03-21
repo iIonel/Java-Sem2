@@ -1,0 +1,1 @@
+{"documents":[{"id":"01","name":"DOC1","path":"/path/to/DOC1","url":"https://example.com/DOC1","tags":[{"name":"Author:","value":"Dani Mocanu"},{"name":"Years: ","value":"3 sept 1992-"}]},{"id":"02","name":"DOC2","path":"/path/to/DOC2","url":"https://example.com/DOC2","tags":[{"name":"Author:","value":"Florin Salam "},{"name":"Years: ","value":"1 oct 1979-"}]}]}

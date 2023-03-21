@@ -9,9 +9,6 @@ public class Problem {
     private Map<Student,List<Project>> prefMap;
     private List<Student> students;
     private List<Project> projects;
-
-
-
     public List<Project> getProjects() {
         return projects;
     }
@@ -19,7 +16,6 @@ public class Problem {
     public void setProjects(List<Project> projects) {
         this.projects = projects;
     }
-
     public Problem() {
         this.projects = new ArrayList<>();
         this.prefMap = new HashMap<>();
@@ -70,10 +66,12 @@ public class Problem {
         }
         int averagePreferences = allPreferences/(students.size());
         System.out.print("Students that have a number of preferences lower than the average number of preferences are: ");
-        for(Student s: prefMap.keySet()){
-            if(prefMap.get(s).size() < averagePreferences)
-                System.out.print(s.getName() + " ");
-        }
+
+        List<Student> valid = students.stream()
+                .filter(stud -> stud.getNoProjects() < averagePreferences)
+                .collect(Collectors.toList());
+        for(Student s: valid)
+            System.out.print(s.getName() + " ");
     }
 
     public void greedySolution() {
