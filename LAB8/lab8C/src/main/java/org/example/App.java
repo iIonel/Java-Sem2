@@ -20,8 +20,6 @@ public class App
             AlbumDAO albums = new AlbumDAO();
             ((AlbumDAO) albums).create(1979, "The Wall", "Pink Floyd", "Rock");
             albums.create(1982, "Thriller", "Michael Jackson", "Pop");
-            //Database.getConnection().commit();
-
             albums.printAll();
             Database.getConnection().close();
         }
