@@ -1,12 +1,22 @@
 package org.example;
 import java.sql.*;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 public class Database {
+    private static final HikariDataSource dataSource;
     private static final String URL = "jdbc:postgresql://localhost:5432/albums";
     private static final String POSTGRES_URL = "jdbc:postgresql://localhost:5432/";
     private static final String USER = "postgres";
     private static final String PASSWORD = "123";
     private static Connection connection;
 
+    static {
+        HikariConfig config = new HikariConfig();
+        config.setJdbcUrl("jdbc:postgresql://localhost:5432/albums");
+        config.setUsername(USER);
+        config.setPassword(PASSWORD);
+        dataSource = new HikariDataSource(config);
+    }
     public static Connection getConnection(){
         if (connection == null) {
             try {

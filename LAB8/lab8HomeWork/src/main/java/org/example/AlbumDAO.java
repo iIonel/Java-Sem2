@@ -1,7 +1,7 @@
 package org.example;
 import java.sql.*;
-
-public class AlbumDAO {
+import java.util.List;
+public abstract class AlbumDAO extends DAO<Album>{
     public void create(Integer year, String name, String artist, String genre) throws SQLException {
         Connection con = Database.getConnection();
         try (PreparedStatement pstmt = con.prepareStatement("INSERT INTO albums(release_year, name, artist_id, genre_id) VALUES (?, ?, ?, ?)")) {
